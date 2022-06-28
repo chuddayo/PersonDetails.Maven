@@ -21,11 +21,8 @@ public class PersonHandlerTest {
 
         this.personHandler = new PersonHandler(personArray);
         this.expected = "\nMy first name is Leon\n" +
-                "My last name is Hunter\n" +
                 "My first name is Tariq\n" +
-                "My last name is Hook\n" +
-                "My first name is Dolio\n" +
-                "My last name is Durant";
+                "My first name is Dolio";
     }
 
     @Test
