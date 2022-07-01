@@ -13,8 +13,9 @@ public class PersonHandler {
     public String whileLoop() {
         String result = "";
         int counter = 0;
-        while (counter < this.personArray.length) {
-            result += "\nMy first name is " + this.personArray[counter].getFirstName();
+        while (counter < personArray.length) {
+            result += "\nMy first name is " + personArray[counter].getFirstName()
+                     +"\nMy last name is " + personArray[counter].getLastName();
             counter++;
         }
         return result;
@@ -22,20 +23,21 @@ public class PersonHandler {
 
     public String forLoop() {
         String result = "";
-        for (int i = 0; i < this.personArray.length; i++) {
-            result += "\nMy first name is " + this.personArray[i].getFirstName();
+        for (int i = 0; i < personArray.length; i++) {
+            result += "\nMy first name is " + personArray[i].getFirstName()
+                    +"\nMy last name is " + personArray[i].getLastName();
         }
         return result;
     }
 
     public String forEachLoop() {
         String result = "";
-        for (Person name : this.personArray) {
-            result += "\nMy first name is " + name.getFirstName();
+        for (Person individual : personArray) {
+            result += "\nMy first name is " + individual.getFirstName()
+                    +"\nMy last name is " + individual.getLastName();
         }
         return result;
     }
-
 
     public Person[] getPersonArray() {
         return personArray;
