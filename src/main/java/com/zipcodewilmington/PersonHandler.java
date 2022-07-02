@@ -14,8 +14,7 @@ public class PersonHandler {
         String result = "";
         int counter = 0;
         while (counter < personArray.length) {
-            result += "\nMy first name is " + personArray[counter].getFirstName()
-                     +"\nMy last name is " + personArray[counter].getLastName();
+            result += personArray[counter];
             counter++;
         }
         return result;
@@ -24,8 +23,7 @@ public class PersonHandler {
     public String forLoop() {
         String result = "";
         for (int i = 0; i < personArray.length; i++) {
-            result += "\nMy first name is " + personArray[i].getFirstName()
-                    +"\nMy last name is " + personArray[i].getLastName();
+            result += personArray[i];
         }
         return result;
     }
@@ -33,8 +31,7 @@ public class PersonHandler {
     public String forEachLoop() {
         String result = "";
         for (Person individual : personArray) {
-            result += "\nMy first name is " + individual.getFirstName()
-                    +"\nMy last name is " + individual.getLastName();
+            result += individual;
         }
         return result;
     }
